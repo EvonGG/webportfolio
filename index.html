@@ -37,13 +37,16 @@
 			<!-- ml-auto similar to float right to 3 navbar -->
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">About Me</a>
+						<a class="nav-link" href="#top">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Projects</a>
+						<a class="nav-link" href="#about">About Me</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Me</a>
+						<a class="nav-link" href="#web">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#form">Contact Me</a>
 					</li>
 				</ul>
 			</div>
@@ -73,8 +76,8 @@
 							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 								<div class="card-body">
 									<ul class="text-justify" style="list-style: none;">
-										<li> <a href=""> Front-End Design </a> </li>
-										<li><a href=""> Video Editing </a></li>
+										<li> <a href="#web"> Front-End Design </a> </li>
+										<li><a href="#vid"> Video Editing </a></li>
 									</ul>
 								</div>
 							</div>
@@ -95,8 +98,8 @@
 							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 								<div class="card-body">
 									<ul class="text-justify" style="list-style: none;">
-										<li> <a href="">Education</a> </li>
-										<li><a href="">Work Experience</a></li>
+										<li> <a href="#edu">Education</a> </li>
+										<li><a href="#work">Work Experience</a></li>
 									</ul>
 								</div>
 							</div>
@@ -115,8 +118,8 @@
 							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 								<div class="card-body">
 									<ul class="text-justify" style="list-style: none;">
-										<li> <a href="">Web Development</a> </li>
-										<li><a href="">Video Editing</a></li>
+										<li> <a href="#webtool">Web Development</a> </li>
+										<li><a href="#vidtool">Video Editing</a></li>
 									</ul>
 								</div>
 							</div>
@@ -159,8 +162,8 @@
 						<div class="containerbg container-fluid pt-5">
 
 								<!-- About Me Section start -->
-								<div class="text-normal row mr-3 ml-3 pt-3 pb-5">
-								    <div class="col-sm-10 col-md-8 col-lg-6 order-2">
+								<div id="about" class="text-normal row mr-3 ml-3 pt-3 pb-5">
+								    <div class="col-sm-10 col-md-6 order-2">
 								    	<h1 class="bgtitle text-white text-center align-middle">About Me</h1>
 								        <h5 class="text-justify">I'm Evon, a freelancer that makes your website stand out from the competition, and creates stunning visuals that tell your story.</h5>
 								        <ul style="list-style: none;">
@@ -169,13 +172,13 @@
 								        	<li><span class="font-weight-bold">Location:</span> Consolacion, Cebu 6001</li>
 								        </ul>
 								    </div>
-								    <div class="col-sm-10 col-md-8 col-lg-6 order-1">
+								    <div class="col-sm-10 col-md-6 order-1">
 								        <img class="mt-5 mt-md-0 rounded-circle" width="300" src="./Images/Main Photo.jpg" class="img-fluid"/>
 								    </div>
 								</div>
 								 <div>
 								    <h5 id="back">Background</h1>
-								    <h3>Education: <span class="font-weight-bold">Bachelor of Science In Electronics and Communications Engineering</span></h3>
+								    <h3 id="edu">Education: <span class="font-weight-bold">Bachelor of Science In Electronics and Communications Engineering</span></h3>
 								    	<p>2008-2013</p>
 								    <h5 id="work"> Recent Work Experience</h1>
 								    <h3>Freelance Video-Editor</h3>
@@ -186,14 +189,202 @@
 								    	<p>January 2016 - September 2021</p>
 								    </div>
 								<!-- About Me Section end -->
+								<!-- Projects -->
+								<div id="web"class="bg-secondary text-light min-vh-100 p-5 mt-5">
+									<h2 class="mb-3">Web Developer Projects</h2>
+
+									<div class="p-md-5 d-md-flex justify-content-center">
+
+										<div class="card bg-dark col-md-4 mb-5" style="width: 18rem;">
+											<div class="card-body">
+												<img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="img-fluid">
+												<h5 class="card-title">HTML</h5>
+												<h6 class="card-subtitle mb-2 text-muted">Programming Basics</h6>
+												<p class="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+												<a href="https://www.google.com/" class="card-link">Link to Project</a>
+												
+											</div>
+										</div>
+															
+										<div class="card bg-dark col-md-4 mb-5 ml-md-3 mr-md-3" style="width: 18rem;">
+											<div class="card-body">
+												<img src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png" class="card-img-top">
+												<h5 class="card-title">Node JS Server</h5>
+												<h6 class="card-subtitle mb-2 text-muted">Backend Basics</h6>
+												<p class="card-text">Node.js is an open-source server environment. Node.js is cross-platform and runs on Windows, Linux, Unix, and macOS. Node.js is a back-end JavaScript runtime environment. Node.js runs on the V8 JavaScript Engine and executes JavaScript code outside a web browser.</p>
+												<a href="https://www.google.com/" class="card-link">Link to Project</a>
+												
+											</div>
+										</div> 
+
+										<div class="card bg-dark col-md-4 mb-5" style="width: 18rem;">
+											<div class="card-body">
+												<img src="https://i.morioh.com/2019/12/17/f1ce6a0af5cb.jpg" class="card-img-top">
+												<h5 class="card-title">Bootstrap</h5>
+												<h6 class="card-subtitle mb-2 text-muted">Rapid Prototyping</h6>
+												<p class="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+												<a href="https://www.google.com/" class="card-link">Link to Project</a>
+											</div>
+										</div>
+									</div>
+									<div id="vid">
+										<h2 class="mb-3">Video Editing Project</h2>
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fevonurs.mondano%2Fvideos%2F652169706376543%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+										</div>
+									</div>
+								</div>
+								<!-- Projects End -->
+
+								<!-- Core Tools Section Start -->
+								<div id="webtool" class="bg-white text-dark">
+								<h3>Web Design Core Tools</h3>
+								<div>
+								    <div>
+								        <img class="img-fluid" width="120" src="images/logo-html5.png"/>
+								    </div>
+								    <div>
+								        <img class="img-fluid" width="120" src="images/logo-css3.png"/>
+								        <img class="img-fluid" width="120" src="images/logo-javascript.png"/>
+								    </div>
+								</div>
+								<!-- Core Tools Section End -->
+								<!-- Other Tools Section Start -->
+
+								<h3 class="text-center">Web Design Other Tools</h3>
+
+								
+								<div class="d-flex flex-md-column flex-row">
+								    <div class="text-center">
+								        <img width="120" src="Images/logo-mongodb.png"/>
+								        <img width="120" src="Images/logo-nodejs.png"/>
+								        <img width="120" src="Images/logo-expressjs.png"/>
+								        <img width="120" src="Images/logo-react.png"/>
+								        <img width="120" src="Images/logo-heroku.png"/>
+								    </div>
+								    <div class="mt-3 text-center">
+								        <img width="120" src="Images/logo-git.png"/>
+								        <img width="120" src="Images/logo-sublime-text-3.png"/>
+								        <img width="120" src="Images/logo-postman.png"/>
+								        <img width="120" src="Images/logo-gitlab-ci-cd.png"/>
+								    </div>
+								</div>
+								</div>
+								<!-- Other Tools Section End -->
+								<!-- Video Editing Tools Start -->
+								<div id="vidtool" class="bg-white pb-3">
+								<h3 class="pt-2  text-center text-dark">Video Editing Tools</h3>
+									<img class="mr-4 img-fluid" width="100" src="Images/premiere.png"/>
+								    <img class="img-fluid" width="100" src="Images/media.png"/>
+								</div>
+								<!-- Video Editing Tools End -->
+								<!-- Contact Form Start -->
+								<div id="form" class="container-fluid bg-dark text-light p-5 mt-5 text-center offset-md-1 col-md-10 ">
+									<h2	class="mb-3">Contact Me</h2>
+									<!-- Wrapper container -->
+									<div class="row d-flex justify-content-center">
+
+										<!-- Bootstrap 5 starter form -->
+										<form  class="bg-primary p-3 col-sm-12 col-md-8 col-xl-4" id="contactForm">
+
+											<!-- Name input -->
+											<div class="mb-3">
+												<label class="form-label" for="name">Name</label>
+												<input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+												<div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+											</div>
+
+											<!-- Email address input -->
+											<div class="mb-3">
+												<label class="form-label" for="emailAddress">Email Address</label>
+												<input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+												<div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+												<div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+											</div>
+
+											<!-- Contact input -->
+											<div class="mb-3">
+												<label class="form-label" for="contactnumber">Contact Number</label>
+												<input class="form-control" id="contactnumber" type="number" placeholder="+63 900 000 0000" data-sb-validations="required" />
+												<div class="invalid-feedback" data-sb-feedback="contactnumber:required">Contact Number is required.</div>
+											</div>
+
+											<!-- Concern input -->
+											<div class="mb-3">
+												<div class="form-group">
+													<label for="exampleFormControlSelect1">Service to be rendered</label>
+													<select class="form-control" id="exampleFormControlSelect1">
+														<option>Options</option>
+														<option>Front-End Design</option>
+														<option>Video Editing</option>
+													</select>
+												</div>
+											</div>
+
+											<!-- Message input -->
+											<div class="mb-3">
+												<label class="form-label " for="message">Message</label>
+												<textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+												<div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+											</div>
+
+											<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal">Send Email</button>
+
+											<div class="modal fade" id="modal">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title text-dark">Thank you for contacting us!</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<p class="text-dark">Message Successfully Sent</p>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</form>
+									</div>
+
+								</div>
+								<!-- Contact Form End -->
 						</div>
 					</section>
 
-
-
-<!-- Contact Form End -->
+					<div class="container-fluid bg-dark pb-5">
+				  			<h3 class="text-white">Location map</h3>
+				  			<div class="mapouter d-flex flex-column justify-content-center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.700981328798!2d123.97355681479704!3d10.365776492600983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9bd555e6994cb%3A0x189a740b9f7d1049!2sRedwood%20Subdivision!5e0!3m2!1sen!2sph!4v1669215881921!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+				  	</div>
 			</div>
 		</div>
+
+		<!-- Footer Start -->
+			<footer id="footer" class="pt-3 ">
+				<div>
+					<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+						<defs>
+							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+						</defs>
+						<g class="parallax">
+							<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,0,0,0.7"/>
+							<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+							<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+							<use xlink:href="#gentle-wave" x="48" y="7" fill="#FF0000" />
+						</g>
+					</svg>
+				</div>
+				<div class="copyright py-2">
+			     	 	&copy; Evon Mondano 2022. All Rights Reserved
+			  	</div>
+			</footer>
+								<!-- Footer End -->
 			
 
 		
