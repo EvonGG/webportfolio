@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	font-family: 'Sarala', sans-serif;
+}
+
+.background {
+	min-height: 100vh;
+	background-image: url(./Images/Cinematic.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
+	background-attachment: scroll;
+}
+
+.containerbg {
+	background-color: rgba(0, 0, 0, 0.7);
+	min-height: 100vh;
+}
+
+.background1 {
+	min-height: 90vh;
+	background-image: url(./Images/background1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
+	background-attachment: scroll;
+}
+
+.containerbg1 {
+	background-color: rgba(0, 0, 0, 0.8);
+	min-height: 90vh;
+}
+
+#landing {
+	padding-top: 5%;
+}
+
+.social-links {
+  margin-top: 11px;
+}
+
+.social-links a {
+  font-size: 35px;
+  display: inline-block;
+  color: #FF0000;
+  line-height: 1;
+  margin-right: 10px;
+  transition: 0.3s;
+  padding-left: 8px;
+
+
+}
+
+.social-links a:hover {
+  color: #0563bb;
+} 
+
+#italic {
+	font-style: italic;
+}
+
+#back {
+	text-decoration: underline;
+}
+
+#work {
+	text-decoration: underline;
+}
