@@ -10,7 +10,7 @@ body {
 }
 
 .background {
-	min-height: 100vh;
+	min-height: 80vh;
 	background-image: url(./Images/Cinematic.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -24,7 +24,7 @@ body {
 }
 
 .background1 {
-	min-height: 90vh;
+	min-height: 80vh;
 	background-image: url(./Images/background1.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -34,7 +34,7 @@ body {
 
 .containerbg1 {
 	background-color: rgba(0, 0, 0, 0.8);
-	min-height: 90vh;
+	min-height: 100vh;
 }
 
 #landing {
