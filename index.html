@@ -3,395 +3,344 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio using HTML, CSS, JavaScript</title>
 
-		<link rel="stylesheet" type="text/css" href="index.css">
-
-		<!-- Google Font Link -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
-
-		<!-- Font Awesome CSS -->
-		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
-		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-		<!-- Bootstrap Link -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-		<title>Portfolio</title>
+		<!-- CSS Link -->
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
 	</head>
 	<body>
 
-		<!-- Navbar Section Start -->
+		<!-- Background Circles Start-->
+		<div class="bg-circles">
+			<div class="circle-1"></div>
+			<div class="circle-2"></div>
+			<div class="circle-3"></div>
+			<div class="circle-4"></div>
+			<div class="circle-5"></div>
+		</div>
+		<!-- Background Circles End-->
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold">
-			<a class="navbar-brand" href="#">Evon Mondano</a>
+		<!-- Overlay Start -->
+		<div class="overlay">
+		</div>
+		<!-- Overlay End -->
 
-			<!-- Burger Menu (Mobile View) Start -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<!-- Main Start -->
+		<div class="main">
 
-			<!-- Burger Menu (Mobile View) End -->
-
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-			<!-- ml-auto similar to float right to 3 navbar -->
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#top">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#web">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#form">Contact Me</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-		<!-- Navbar Section End -->
-
-	
-		<!-- Main Content Section End -->
-		<div class="container-fluid text-center">
-			<div class="row">
-
-				<!-- Side Navbar Section Start / Accordion -->
-				<div class="card col-xl-2 d-none d-xl-block p-0">
-					<div class="accordion" id="accordionExample">
-
-						<!-- Services Section Start -->
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h2 class="mb-0">
-									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										Services
-									</button>
-								</h2>
+			<!-- Header Start -->
+			<header class="header">
+				<div class="container">
+					<div class="row flex-end">
+						<button class="nav-toggler">
+							<span></span>
+						</button>
+						<nav class="nav">
+							<div class="nav-inner">
+								<ul>
+									<li><a href="#home" class="nav-item link-item">home</a></li>
+									<li><a href="#about" class="nav-item link-item">about</a></li>
+									<li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+									<li><a href="#contact" class="nav-item link-item">contact</a></li>
+								</ul>
 							</div>
-							<!-- class="collapse show" -->
-							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-								<div class="card-body">
-									<ul class="text-justify" style="list-style: none;">
-										<li> <a href="#web"> Front-End Design </a> </li>
-										<li><a href="#vid"> Video Editing </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- Services Section End -->
-
-
-						<!-- Projects Section Start -->
-						<div class="card">
-							<div class="card-header" id="headingTwo">
-								<h2 class="mb-0">
-									<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										Background
-									</button>
-								</h2>
-							</div>
-
-							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-								<div class="card-body">
-									<ul class="text-justify" style="list-style: none;">
-										<li> <a href="#edu">Education</a> </li>
-										<li><a href="#work">Work Experience</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- Projects Section End -->
-
-						<!-- Tools Section Start -->
-						<div class="card">
-							<div class="card-header" id="headingThree">
-								<h2 class="mb-0">
-									<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-										Tools
-									</button>
-								</h2>
-							</div>
-							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-								<div class="card-body">
-									<ul class="text-justify" style="list-style: none;">
-										<li> <a href="#webtool">Web Development</a> </li>
-										<li><a href="#vidtool">Video Editing</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- Tools Section End -->
+						</nav>
 					</div>
-
 				</div>
-				<!-- Side Navbar Section End -->
+			</header>
+			<!-- Header End -->
 
-				<!-- Side Content Section Start -->
-				<div class="col-xl-10 p-0">
-					<!-- Landing Page Start -->
-					<section class="background1 text-white">
-						<div class="containerbg1 container-fluid align-middle">
-							<div class="text-normal row mr-3 ml-3 pt-3 pb-5">
-								    <div id="landing" class="d-flex flex-column justify-content-center offset-1 col-md-5">
-								        <h1>EVON MONDANO</h2>
-								        <h2>FREELANCE</h2>
-								        <h2>JUNIOR WEB DEVELOPER</h2>
-								        <h2>VIDEO EDITOR</h2>
-								        <div class="social-links offset-2 align-middle">
-								        		        <a href="https://www.facebook.com/evonurs.mondano/" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-								        		        <a href="https://www.instagram.com/evonurs/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-								        		        <a href="https://www.linkedin.com/in/evon-ur-s-mondano-78224a258/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-								        </div>
-								        <h3 id="italic" class="pt-5">"Helping clients take their websites/videos from zero to hero."</h3>
-								    </div>
-								    
+			<!-- Home Section Start -->
+			<section class="home-section align-items-center active" id="home">
+				<div class="row align-items-center">
+					<div class="home-text">
+						<p>Hi there! My name is</p>
+						<h1>Evon Mondano</h1>
+						<h2>Full Stack Developer</h2>
+						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </p> -->
+						<a href="#about" class="btn link-item">More About Me</a>
+						<a href="#portfolio" class="btn link-item">Portfolio</a>
+					</div>
+					<div class="home-img">
+						<div class="img-box">
+						<img src="Images/Profile.gif" alt="profile-img">
+						</div>
+					</div>
+				</div> 
+			</section>
+			<!-- Home Section End -->
+
+			<!-- About Section Start -->
+			<section class="about-section sec-padding" id="about">
+				<div class="container">
+					<div class="row">
+						<div class="section-title">
+							<h2>About Me</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="about-img">
+							<div class="img-box">
+								<img src="Images/Profile.gif" alt="about img">
 							</div>
 						</div>
-					</section>
-					<!-- Landing Page End -->
+						<div class="about-text">
+							<p>I am a career shifter who is passionate about web development. As someone who has always been fascinated by the power of technology to change the world, I decided to pursue a new career path as a web developer.
+							</p>
+							<p>With a background in being a Team Leader in the BPO industry, I have developed a unique set of skills that I believe will be valuable in my journey as a web developer. My strong analytical skills, attention to detail, and ability to think creatively are just some of the qualities that I will bring to the table.</p>
+							<p>As an entry-level web developer, I am committed to constantly learning and improving my skills. My goal as a web developer is to build beautiful, user-friendly, and functional websites that help businesses and individuals achieve their goals. I am excited to be part of this dynamic and ever-evolving field, and I look forward to contributing my skills to help create innovative and meaningful web experiences.</p>
+							<h3>Skills</h3>
+							<div class="skills">
+								<div class="skill-item">HTML</div>
+								<div class="skill-item">CSS</div>
+								<div class="skill-item">JavaScript</div>
+								<div class="skill-item">Bootstrap</div>
+								<div class="skill-item">Node.js</div>
+								<div class="skill-item">Express.js</div>
+								<div class="skill-item">React.js</div>
+								<div class="skill-item">Git</div>
+								<div class="skill-item">MongoDB</div>
+								<div class="skill-item">Adobe Photoshop</div>
+								<div class="skill-item">Adobe Premier Pro</div>
+							</div>
 
+							<div class="about-tabs">
+								<button type="button" class="tab-item active" data-target="#education">Education</button>
+								<button type="button" class="tab-item" data-target="#experience">Experience</button>
+							</div>
 
-					<!-- Background Image 2 -->
-
-					<section class="background text-white">
-
-						<div class="containerbg container-fluid pt-5">
-
-								<!-- About Me Section start -->
-								<div id="about" class="text-normal row mr-3 ml-3 pt-3 pb-5">
-								    <div class="col-sm-10 col-md-6 order-2">
-								    	<h1 class="bgtitle text-white text-center align-middle">About Me</h1>
-								        <h5 class="text-justify">I'm Evon, a freelancer that makes your website stand out from the competition, and creates stunning visuals that tell your story.</h5>
-								        <ul style="list-style: none;">
-								        	<li><span class="font-weight-bold">Birthday:</span> October 6, 1991</li>
-								        	<li><span class="font-weight-bold">Phone:</span> +63 915 528 8342</li>
-								        	<li><span class="font-weight-bold">Location:</span> Consolacion, Cebu 6001</li>
-								        </ul>
-								    </div>
-								    <div class="col-sm-10 col-md-6 order-1">
-								        <img class="mt-5 mt-md-0 rounded-circle" width="300" src="./Images/Main Photo.jpg" class="img-fluid"/>
-								    </div>
-								</div>
-								 <div class="pt-5 pb-1">
-								    <h5 id="back">Background</h1>
-								    <h3 id="edu">Education: <span class="font-weight-bold">Bachelor of Science In Electronics and Communications Engineering</span></h3>
-								    	<p>2008-2013</p>
-								    <h5 id="work"> Recent Work Experience</h1>
-								    <h3>Freelance Video-Editor</h3>
-								    	<p>May 2022 - Present</p>
-								    <h3>Customer Success Manager at Unlimited Furniture Group</h3>
-								    	<p>September 2021 - May 2022</p>
-								    <h3>Group Team Leader at TechMahindra Limited</h3>
-								    	<p>January 2016 - September 2021</p>
-								    </div>
-								<!-- About Me Section end -->
-								<!-- Projects -->
-								<div id="web"class="bg-secondary text-light min-vh-100 p-5 mt-5">
-									<h2 class="mb-3">Web Developer Projects</h2>
-
-									<div class="p-md-5 d-md-flex justify-content-center">
-
-										<div class="card bg-dark col-md-4 mb-5" style="width: 18rem;">
-											<div class="card-body">
-												<img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="img-fluid">
-												<h5 class="card-title">HTML</h5>
-												<h6 class="card-subtitle mb-2 text-muted">Programming Basics</h6>
-												<p class="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
-												<a href="https://www.google.com/" class="card-link">Link to Project</a>
-												
-											</div>
-										</div>
-															
-										<div class="card bg-dark col-md-4 mb-5 ml-md-3 mr-md-3" style="width: 18rem;">
-											<div class="card-body">
-												<img src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png" class="card-img-top">
-												<h5 class="card-title">Node JS Server</h5>
-												<h6 class="card-subtitle mb-2 text-muted">Backend Basics</h6>
-												<p class="card-text">Node.js is an open-source server environment. Node.js is cross-platform and runs on Windows, Linux, Unix, and macOS. Node.js is a back-end JavaScript runtime environment. Node.js runs on the V8 JavaScript Engine and executes JavaScript code outside a web browser.</p>
-												<a href="https://www.google.com/" class="card-link">Link to Project</a>
-												
-											</div>
-										</div> 
-
-										<div class="card bg-dark col-md-4 mb-5" style="width: 18rem;">
-											<div class="card-body">
-												<img src="https://i.morioh.com/2019/12/17/f1ce6a0af5cb.jpg" class="card-img-top">
-												<h5 class="card-title">Bootstrap</h5>
-												<h6 class="card-subtitle mb-2 text-muted">Rapid Prototyping</h6>
-												<p class="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
-												<a href="https://www.google.com/" class="card-link">Link to Project</a>
-											</div>
-										</div>
+							<!-- Education Start -->
+							<div class="tab-content active" id="education">
+								<div class="timeline">
+									<div class="timeline-item">
+										<span class="date">November 7, 2022 - February 28, 2023</span>
+										<h4>Developer Career Program - <span>Zuitt Coding Bootcamp</span></h4>
+										<p>We acquired these following coding skillsets: HTML, CSS, Bootstrap, Javascript, Mobile responsiveness, Mongodb (NoSql), ExpressJs, Node.Js, REST API, Github, Git, ReactJs.</p>
 									</div>
-									<div id="vid">
-										<h2 class="mb-3">Video Editing Project</h2>
-										<div class="embed-responsive embed-responsive-16by9">
-											<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fevonurs.mondano%2Fvideos%2F652169706376543%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-										</div>
+									<div class="timeline-item">
+										<span class="date">November 2, 2022 - November 7, 2022</span>
+										<h4>Beginner to Advance Premier Pro Masterclass - <span>Graphics Media Training Philippines</span></h4>
+										<p>We were taught how to effectively use Adobe Premier Pro to create stunning videos.</p>
 									</div>
+									<div class="timeline-item">
+										<span class="date">June 2008 - October 2013</span>
+										<h4>Bachelor of Science in Electronics and Communications Engineering - <span>University of San Carlos</span></h4>
+									</div>	
 								</div>
-								<!-- Projects End -->
+							</div>
+							<!-- Education End -->
 
-								<!-- Core Tools Section Start -->
-								<div id="webtool" class="bg-white text-dark">
-								<h3>Web Design Core Tools</h3>
-								<div>
-								    <div>
-								        <img class="img-fluid" width="120" src="images/logo-html5.png"/>
-								    </div>
-								    <div>
-								        <img class="img-fluid" width="120" src="images/logo-css3.png"/>
-								        <img class="img-fluid" width="120" src="images/logo-javascript.png"/>
-								    </div>
-								</div>
-								<!-- Core Tools Section End -->
-								<!-- Other Tools Section Start -->
-
-								<h3 class="text-center">Web Design Other Tools</h3>
-
-								
-								<div class="d-flex flex-md-column flex-row">
-								    <div class="text-center">
-								        <img width="120" src="Images/logo-mongodb.png"/>
-								        <img width="120" src="Images/logo-nodejs.png"/>
-								        <img width="120" src="Images/logo-expressjs.png"/>
-								        <img width="120" src="Images/logo-react.png"/>
-								        <img width="120" src="Images/logo-heroku.png"/>
-								    </div>
-								    <div class="mt-3 text-center">
-								        <img width="120" src="Images/logo-git.png"/>
-								        <img width="120" src="Images/logo-sublime-text-3.png"/>
-								        <img width="120" src="Images/logo-postman.png"/>
-								        <img width="120" src="Images/logo-gitlab-ci-cd.png"/>
-								    </div>
-								</div>
-								</div>
-								<!-- Other Tools Section End -->
-								<!-- Video Editing Tools Start -->
-								<div id="vidtool" class="bg-white pb-3">
-								<h3 class="pt-2  text-center text-dark">Video Editing Tools</h3>
-									<img class="mr-4 img-fluid" width="100" src="Images/premiere.png"/>
-								    <img class="img-fluid" width="100" src="Images/media.png"/>
-								</div>
-								<!-- Video Editing Tools End -->
-								<!-- Contact Form Start -->
-								<div id="form" class="container-fluid bg-dark text-light p-5 mt-5 text-center offset-md-1 col-md-10 ">
-									<h2	class="mb-3">Contact Me</h2>
-									<!-- Wrapper container -->
-									<div class="row d-flex justify-content-center">
-
-										<!-- Bootstrap 5 starter form -->
-										<form  class="bg-primary p-3 col-sm-12 col-md-8 col-xl-4" id="contactForm">
-
-											<!-- Name input -->
-											<div class="mb-3">
-												<label class="form-label" for="name">Name</label>
-												<input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-												<div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-											</div>
-
-											<!-- Email address input -->
-											<div class="mb-3">
-												<label class="form-label" for="emailAddress">Email Address</label>
-												<input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
-												<div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-												<div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-											</div>
-
-											<!-- Contact input -->
-											<div class="mb-3">
-												<label class="form-label" for="contactnumber">Contact Number</label>
-												<input class="form-control" id="contactnumber" type="number" placeholder="+63 900 000 0000" data-sb-validations="required" />
-												<div class="invalid-feedback" data-sb-feedback="contactnumber:required">Contact Number is required.</div>
-											</div>
-
-											<!-- Concern input -->
-											<div class="mb-3">
-												<div class="form-group">
-													<label for="exampleFormControlSelect1">Service to be rendered</label>
-													<select class="form-control" id="exampleFormControlSelect1">
-														<option>Options</option>
-														<option>Front-End Design</option>
-														<option>Video Editing</option>
-													</select>
-												</div>
-											</div>
-
-											<!-- Message input -->
-											<div class="mb-3">
-												<label class="form-label " for="message">Message</label>
-												<textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-												<div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-											</div>
-
-											<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal">Send Email</button>
-
-											<div class="modal fade" id="modal">
-												<div class="modal-dialog">
-													<div class="modal-content">
-														<div class="modal-header">
-															<h5 class="modal-title text-dark">Thank you for contacting us!</h5>
-															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																<span aria-hidden="true">&times;</span>
-															</button>
-														</div>
-														<div class="modal-body">
-															<p class="text-dark">Message Successfully Sent</p>
-														</div>
-														<div class="modal-footer">
-															<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-														</div>
-													</div>
-												</div>
-											</div>
-
-										</form>
+							<!-- Experience Start -->
+							<div class="tab-content" id="experience">
+								<div class="timeline">
+									<div class="timeline-item">
+										<span class="date">September 2021 - May 2022</span>
+										<h4>Customer Success Manager - <span>Unlimited Furniture Group</span></h4>
+										<p>Responsible for building loyalty to ensure long-term client retention by presenting product information, addressing customer issues and helping the sales team with upsells and renewals.</p>
 									</div>
-
+									<div class="timeline-item">
+										<span class="date">January 2016 - September 2021</span>
+										<h4>Team Leader/Group Team Leader - <span>TechMahindra LTD</span></h4>
+										<p>Managed staff and operations of a technical area to include scheduling time, managing performance, supply and logistics, identifying training needs, and providing recommendations for personnel actions.</p>
+									</div>
+									<div class="timeline-item">
+										<span class="date">September 2014 - January 2016</span>
+										<h4>Technical Support Representative/Supervisor - <span>Teleperformance Phils. Inc.</span></h4>
+										<p>Worked as a Technical Support representative for 6 months - Responsible for answering and resolving advanced product technical-support questions received from customers. Promoted as a Supervisor after being the top representative for 3 consecutive months</p>
+									</div>	
 								</div>
-								<!-- Contact Form End -->
+							</div>
+							<!-- Experience End -->
+								<a href="Edited Resume.pdf" target="_blank" class="btn">Download CV</a>
+								<a href="#contact" class="btn link-item">Contact Me</a>
+					</div>
+				</div>
+			</section>
+			<!-- About Section End -->
+
+			<!-- Portfolio Section Start-->
+			<section class="portfolio-section sec-padding" id="portfolio">
+				<div class="container">
+					<div class="row">
+						<div class="section-title">
+							<h2>Recent Work</h2>
 						</div>
-					</section>
+					</div>
+					<div class="row">
+						<!-- Porfolio Items Start -->
+						<div class="portfolio-item">
+							<div class="portfolio-item-thumbnail">
+								<img src="Images/Background.jpg" alt="">
+							</div>
+							<h3 class="portfolio-item-title">Background Website</h3>
+							<button type="button" class="btn view-project-btn">View Project</button>
+							<div class="portfolio-item-details">
+								<div class="description">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. </p>
+								</div>
+								<div class="general-info">
+									<ul>
+										<li>Created - <span>4 December 2020</span></li>
+										<li>Technologies used - <span>HTML, CSS</span></li>
+										<li>Role - <span>Frontend</span></li>
+										<li>View Online - <span>www.domain.com</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Porfolio Items End -->
+						<!-- Porfolio Items Start -->
+						<div class="portfolio-item">
+							<div class="portfolio-item-thumbnail">
+								<img src="Images/Cinematic.jpg" alt="">
+							</div>
+							<h3 class="portfolio-item-title">Bootstrap Website</h3>
+							<button type="button" class="btn view-project-btn">View Project</button>
+							<div class="portfolio-item-details">
+								<div class="description">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. </p>
+								</div>
+								<div class="general-info">
+									<ul>
+										<li>Created - <span>4 December 2020</span></li>
+										<li>Technologies used - <span>HTML, CSS</span></li>
+										<li>Role - <span>Frontend</span></li>
+										<li>View Online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Porfolio Items End -->
+						<!-- Porfolio Items Start -->
+						<div class="portfolio-item">
+							<div class="portfolio-item-thumbnail">
+								<img src="Images/PABLIK BEACH EDIT.jpg" alt="">
+							</div>
+							<h3 class="portfolio-item-title">Travel Website</h3>
+							<button type="button" class="btn view-project-btn">View Project</button>
+							<div class="portfolio-item-details">
+								<div class="description">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. </p>
+								</div>
+								<div class="general-info">
+									<ul>
+										<li>Created - <span>4 December 2020</span></li>
+										<li>Technologies used - <span>HTML, CSS</span></li>
+										<li>Role - <span>Frontend</span></li>
+										<li>View Online - <span>www.domain.com</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Porfolio Items End -->
+						<!-- Porfolio Items Start -->
+						<div class="portfolio-item">
+							<div class="portfolio-item-thumbnail">
+								<img src="Images/Naomi Hook.jpg" alt="">
+							</div>
+							<h3 class="portfolio-item-title">Naomi Website</h3>
+							<button type="button" class="btn view-project-btn">View Project</button>
+							<div class="portfolio-item-details">
+								<div class="description">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. </p>
+								</div>
+								<div class="general-info">
+									<ul>
+										<li>Created - <span>4 December 2020</span></li>
+										<li>Technologies used - <span>HTML, CSS</span></li>
+										<li>Role - <span>Frontend</span></li>
+										<li>View Online - <span>www.domain.com</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Porfolio Items End -->
+					</div>
+				</div>
+			</section>
+			<!-- Portfolio Section End-->
 
-					<div class="container-fluid bg-dark pb-5">
-				  			<h3 class="text-white">Location map</h3>
-				  			<div class="mapouter d-flex flex-column justify-content-center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.700981328798!2d123.97355681479704!3d10.365776492600983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9bd555e6994cb%3A0x189a740b9f7d1049!2sRedwood%20Subdivision!5e0!3m2!1sen!2sph!4v1669215881921!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-				  	</div>
-			</div>
+			<!-- Contact Section Start -->
+			<section class="contact-section sec-padding" id="contact">
+				<div class="contaier">
+					<div class="row">
+						<div class="section-title">
+							<h2>Contact me</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="contact-form">
+							<form>
+								<div class="row">
+									<div class="input-group">
+										<input type="text" placeholder="Name" class="input-control" required>
+									</div>
+									<div class="input-group">
+										<input type="text" placeholder="Email" class="input-control" required>
+									</div>
+									<div class="input-group">
+										<input type="text" placeholder="Subject" class="input-control" required>
+									</div>
+									<div class="input-group">
+										<textarea placeholder="Message" class="input-control" required></textarea>
+									</div>
+									<div class="submit-btn">
+										<button type="submit" class="btn">Send Message</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="contact-info">
+							<div class="contact-info-item">
+								<h3>Email</h3>
+								<p>evon.mondano@gmail.com</p>
+							</div>
+							<div class="contact-info-item">
+								<h3>Mobile Number</h3>
+								<p>0915-528-8342</p>
+							</div>
+							<div class="contact-info-item">
+								<h3>Follow Me</h3>
+								<div class="social-links">
+									<a href="https://www.facebook.com/evonurs.mondano/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://www.instagram.com/evonurs/" target="_blank"><i class="fab fa-instagram"></i></a>
+									<a href="https://www.linkedin.com/in/evon-mondano-78224a258/" target="_blank"><i class="fab fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Section End -->
 		</div>
 
-		<!-- Footer Start -->
-			<footer id="footer" class="pt-3 ">
-				<div>
-					<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-					viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-						<defs>
-							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-						</defs>
-						<g class="parallax">
-							<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,0,0,0.7"/>
-							<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-							<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-							<use xlink:href="#gentle-wave" x="48" y="7" fill="#FF0000" />
-						</g>
-					</svg>
+		<!-- Main End -->
+
+		<!-- Portfolio Item Details Pop-up Start -->
+		<div class="portfolio-popup">
+			<div class="pp-inner">
+				<div class="pp-content">
+					<div class="pp-header">
+						<button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+						<div class="pp-thumbnail">
+							<img src="Images/Background.jpg" alt="pp-thumbnail">
+						</div>
+						<h3></h3>
+					</div>
+					<div class="pp-body">
+					</div>
 				</div>
-				<div class="copyright py-2">
-			     	 	&copy; Evon Mondano 2022. All Rights Reserved
-			  	</div>
-			</footer>
-								<!-- Footer End -->
-			
+			</div>
+		</div>
+		<!-- Portfolio Item Details Pop-up End -->
 
-		
-
-		<!-- Bootstrap scrpit start-->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-		<!-- Bootstrap script end-->
+		<script src="./index.js"type="text/javascript"></script>
 	</body>
 </html>
